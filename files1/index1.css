@@ -1,0 +1,132 @@
+header{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid green;
+  background-color: cyan;
+  border: 1px solid black;
+  grid-column: 1/span 8;
+}
+main{
+  background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+body{
+    padding: 10px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 1fr 15vh;
+    grid-gap: 10px;
+}
+.navigation1{
+    grid-row: 2/span 7 ;
+    width: 20vw;
+    background-color: brown;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+li{
+   margin: 20px; 
+   list-style: none;
+
+   
+}
+.navigation1 a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+.navigation1 a :hover{
+    text-decoration: underline;
+}
+.log{
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.navigation2{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/span 6;
+    grid-row-start: 3;
+    
+}
+.cube{
+    height:auto;
+    width: 150px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px black;
+}
+.cube h4{
+    color: red;
+    font-size: medium;
+}
+.cube p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+.view1{
+   
+    width: 50vw;
+    grid-row: 4/7;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+th{
+    border-bottom: 1px solid black;
+    float:center;
+}
+.view2{
+    box-shadow: 5px 5px 5px black;
+    grid-row:4/7 ;
+    grid-column: 3/7;
+    background-color: whitesmoke;
+}
+.view1,.view2{
+    overflow: auto;
+
+}
+td{
+    text-align: center;
+}
+tr :nth-child(even){
+    background-color: rgb(207, 204, 204);
+}
+.view1 h4,.view2 h4{
+    color: brown;
+    text-align: center;
+    
+}
+footer{
+    background-color: black;
+    grid-row: 2/7;
+    grid-column-start:7 ;
+    grid-column-end: 8;
+}

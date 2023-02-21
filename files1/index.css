@@ -1,0 +1,195 @@
+.body{
+    background-image:url(../images/image3.jpg);
+    background-position: center;
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+.header{
+    height: 10vh;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+header img{
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    width: 30vw;
+    height: 40vh;
+    background-color: rgba(114, 110, 110, 0.464);
+    border-top: 1px solid aqua;
+}
+legend{
+    color: rgb(0, 68, 255);
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+  
+}
+.input{
+    display: block;
+    border: none;
+    margin: 2em;
+    border-radius: 10px;
+    padding: 0.7em;
+    background-color: rgba(158, 158, 158,0.8);
+}
+::placeholder{
+    color: aquamarine;
+}
+.submit{
+    background-color: rgb(2, 217, 255);
+    padding: 2px 20px;
+
+}
+fieldset a{
+    color: cornflowerblue;
+}
+
+/* ----------------student.hml----------*/
+.anim{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/image7.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+@keyframes logo{
+    0%{
+      top: -1000px;
+    }
+    100%{
+        top: 60px;
+    }
+}
+
+.img{
+    position: relative;
+    top: 60px;
+    animation-name: logo;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+}
+.anim p{
+    color: white;
+    left: -1000px;
+    width: 50vw;
+    position: relative;
+    top: 70px;
+    animation-name: par;
+    animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes par{
+    0%{
+        left: -1000px;
+      }
+      100%{
+          left: 20vw;
+      }
+}
+.anim button{
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn{
+    0%{
+       background-color: rgb(43, 255, 0);
+      }
+      100%{
+          background-color: transparent;
+      }
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cube{
+    background-color: whitesmoke;
+    width: 70vw;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cube i{
+  color: rgb(255, 132, 153);
+  
+  font-size: 50px;
+}
+.images img{
+  width: 80vw;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid pink ;
+}
+footer{
+    height: 70vh;
+    background-color: black;
+    color: whitesmoke;
+}
+footer img{
+    height: 80px;
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+}
+footer p{
+    width: 100px;
+    margin-left: 10px;
+}
+footer i{
+    margin: 10px;
+    color: rgb(104, 103, 103);
+}
+.extra{
+    display:  flex;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+.extra img{
+    height: 50px ;
+    width: auto;
+}
